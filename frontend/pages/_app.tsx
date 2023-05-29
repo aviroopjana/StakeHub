@@ -8,7 +8,7 @@ interface AppProps {
   pageProps: any;
 }
 
-export default function App({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps }: AppProps): JSX.Element {
   const { provider, webSocketProvider } = configureChains(
     [sepolia],
     [publicProvider()]
